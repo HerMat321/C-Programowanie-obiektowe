@@ -1,0 +1,928 @@
+
+using System;
+namespace Example
+{
+    class cOsoba
+    {	public int wiek;	}
+    public class CMain
+    {
+        public static void Main()
+        {
+            cOsoba o = new cOsoba();
+            o.wiek = 13;
+            Console.WriteLine( "wiek osoby to " + o.wiek.ToString() + " lat");
+            Console.ReadKey();
+       }
+    }
+}
+
+************************************************************
+
+
+using System;
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // wspó³rzêdne punktu
+            int x, y;
+            x = 3;
+            y = 2;
+            // wypisanie informacji
+            Console.WriteLine("Punkt ({0}, {1})", x, y);
+            Console.ReadKey();
+        }
+    }
+}
+
+*************************************************
+using System;
+namespace Adresy_na_stercie_i_stosie
+{
+    unsafe class Program
+    {
+        public class Klasa
+        {
+            public double x1;
+            public int y1;
+            Klasa()
+            {   x1 = 1;  y1 = 5;  }
+            unsafe static void Main(string[] args)
+            {
+                Klasa obj = new Klasa();
+                int x = 55, y = 12;
+                int* i;
+                i = &x;  // adres zmiennej
+                Console.WriteLine("Wartoœæ:{0} @ Adres:{1}", x, (int)i);
+                i = &y;  // adres zmiennej
+                Console.WriteLine("Wartoœæ:{0} @ Adres:{1}", y, (int)i);
+                //Adresy pól obiektu
+                fixed (double* p1 = &obj.x1)
+                    Console.WriteLine("Wartoœæ:{0} @ Adres:{1}", *p1, (int)p1);
+                fixed (int* p1 = &obj.y1)
+                    Console.WriteLine("Wartoœæ:{0} @ Adres:{1}", *p1, (int)p1);
+                Console.ReadKey();
+            }
+        }
+    }
+}
+
+
+****************************************************
+
+
+using System;
+
+class Punkt
+{
+  int x;
+  int y;
+
+  public static void Main()
+  {
+    Punkt punkt1 = new Punkt();
+    punkt1.x = 100;
+    punkt1.y = 200;
+    Console.WriteLine("punkt.x = " + punkt1.x);
+    Console.WriteLine("punkt.y = " + punkt1.y);
+    Console.ReadKey();
+  }
+}
+
+
+***************************************************
+
+
+using System;
+
+class Punkt
+{
+  int x;
+  int y;
+
+  int PobierzX()
+  {
+    return x;
+  }
+
+  int PobierzY()
+  {
+    return y;
+  }
+
+  void WyswietlWspolrzedne()
+  {
+    Console.WriteLine("wspó³rzêdna x = " + x);
+    Console.WriteLine("wspó³rzêdna y = " + y);
+  }
+  
+  public static void Main()
+  {
+    Punkt punkt1 = new Punkt();
+    punkt1.x = 100;
+    punkt1.y = 200;
+    int wspX = punkt1.PobierzX();
+    int wspY = punkt1.PobierzY();
+    Console.WriteLine("wspó³rzêdna x = " + wspX);
+    Console.WriteLine("wspó³rzêdna y = " + wspY);
+    Console.ReadKey();
+  }
+}
+
+
+************************************************
+
+using System;
+class Program
+{
+  class Punkt
+  {
+    public int x, y;
+  }
+  static void Main(string[] args)
+  {
+    // tworzenie punktu
+    Punkt p1 = new Punkt();
+    p1.x = 3;
+    p1.y = 2;
+    // wypisanie informacji
+    Console.WriteLine("Punkt({0}, {1})", p1.x, p1.y);
+    Console.ReadKey();
+  }
+}
+
+
+********************************************
+
+using System;
+class Program
+{
+  class Punkt
+  {
+    public int x, y;
+  }
+  static void Main(string[] args)
+  {
+    // tworzenie punktów
+    Punkt p1 = new Punkt();
+    Punkt p2 = new Punkt();
+    p1.x = 3; p1.y = 2;
+    p2.x = 5; p2.y = 1; 
+    // wypisanie informacji
+    Console.WriteLine("Punkt1({0}, {1})", p1.x, p1.y);
+    Console.WriteLine("Punkt2({0}, {1})", p2.x, p2.y);
+    Console.ReadKey();
+  }
+}
+
+************************************************
+
+
+using System;
+
+class Punkt
+{
+    int x;
+    int y;
+    int PobierzX()
+    {
+        return x;
+    }
+    int PobierzY()
+    {
+        return y;
+    }
+    void UstawX(int wspX)
+    {
+        x = wspX;
+    }
+    void UstawY(int wspY)
+    {
+        y = wspY;
+    }
+    void UstawXY(int wspX, int wspY)
+    {
+        x = wspX;
+        y = wspY;
+    }
+    void WyswietlWspolrzedne()
+    {
+        Console.WriteLine("wspó³rzêdna x = " + x);
+        Console.WriteLine("wspó³rzêdna y = " + y);
+    }
+
+    public static void Main()
+    {
+        Punkt pierwszyPunkt = new Punkt();
+        Punkt drugiPunkt = new Punkt();
+        pierwszyPunkt.UstawX(100);
+        pierwszyPunkt.UstawY(100);
+        Console.WriteLine("pierwszyPunkt:");
+        pierwszyPunkt.WyswietlWspolrzedne();
+        drugiPunkt.UstawXY(200, 200);
+        Console.WriteLine("\ndrugiPunkt:");
+        drugiPunkt.WyswietlWspolrzedne();
+        Console.ReadKey();
+    }
+}
+
+
+********************************************
+
+using System;
+class Punkt
+{
+    int x;
+    int y;
+    int PobierzX()
+    {
+        return x;
+    }
+    int PobierzY()
+    {
+        return y;
+    }
+    void UstawX(int wspX)
+    {
+        x = wspX;
+    }
+    void UstawY(int wspY)
+    {
+        y = wspY;
+    }
+    void UstawXY(int wspX, int wspY)
+    {
+        x = wspX;
+        y = wspY;
+    }
+    void UstawXY(Punkt punkt)
+    {
+        x = punkt.x;
+        y = punkt.y;
+    }
+    Punkt PobierzXY()
+    {
+        Punkt punkt = new Punkt();
+        punkt.x = x;
+        punkt.y = y;
+        return punkt;
+    }
+    void WyswietlWspolrzedne()
+    {
+        Console.WriteLine("wspó³rzêdna x = " + x);
+        Console.WriteLine("wspó³rzêdna y = " + y);
+    }
+
+    public static void Main()
+    {
+        Punkt pierwszyPunkt = new Punkt();
+        Punkt drugiPunkt;
+        pierwszyPunkt.UstawX(100);
+        pierwszyPunkt.UstawY(100);
+        Console.WriteLine("Obiekt pierwszyPunkt ma wspó³rzêdne:");
+        pierwszyPunkt.WyswietlWspolrzedne();
+        Console.Write("\n");
+        drugiPunkt = pierwszyPunkt.PobierzXY();
+        Console.WriteLine("Obiekt drugiPunkt ma wspó³rzêdne:");
+        drugiPunkt.WyswietlWspolrzedne();
+        Console.Write("\n");
+        Punkt trzeciPunkt = new Punkt();
+        trzeciPunkt.UstawXY(drugiPunkt);
+        Console.WriteLine("Obiekt trzeciPunkt ma wspó³rzêdne:");
+        trzeciPunkt.WyswietlWspolrzedne();
+        Console.Write("\n");
+        Console.ReadKey();
+    }
+}
+
+
+
+**********************************************************************
+
+using System;
+namespace Program_Punkt_Konstruktor
+{
+    class Punkt
+    {
+      int x;
+      int y;
+      Punkt()
+      {
+        x = 1;
+        y = 1;
+      }
+      public static void Main()
+      {
+        Punkt punkt1 = new Punkt();
+        System.Console.WriteLine("punkt.x = " + punkt1.x);
+        System.Console.WriteLine("punkt.y = " + punkt1.y);
+        Console.ReadKey();
+      }
+    }
+}
+
+*******************************************************************
+
+using System;
+namespace Przyklad_Punkt_Konstruktor_Argumenty
+{
+    class Punkt
+    {
+      int x;
+      int y;
+      Punkt(int wspX, int wspY)
+      {
+          x = wspX;
+          y = wspY;
+      }
+      public static void Main()
+      {
+          Punkt punkt1 = new Punkt(10, 20);
+          System.Console.WriteLine("punkt.x = " + punkt1.x);
+          System.Console.WriteLine("punkt.y = " + punkt1.y);
+        Console.ReadKey();
+      }
+    }
+}
+
+*******************************************************************
+
+
+
+
+using System;
+namespace Przyklad_Przeci¹¿enie_Konstruktora
+{
+    class Punkt
+    {
+        int x;
+        int y;
+        Punkt()
+        {
+            x = 1;
+            y = 1;
+        }
+        Punkt(int wspX, int wspY)
+        {
+            x = wspX;
+            y = wspY;
+        }
+        Punkt(Punkt punkt)
+        {
+            x = punkt.x;
+            y = punkt.y;
+        }
+      public static void Main()
+      {
+          Punkt punkt1 = new Punkt();
+
+          System.Console.WriteLine("punkt1:");
+          System.Console.WriteLine("x = " + punkt1.x);
+          System.Console.WriteLine("y = " + punkt1.y);
+          System.Console.WriteLine("");
+
+          Punkt punkt2 = new Punkt(100, 100);
+
+          System.Console.WriteLine("punkt2:");
+          System.Console.WriteLine("x = " + punkt2.x);
+          System.Console.WriteLine("y = " + punkt2.y);
+          System.Console.WriteLine("");
+
+          Punkt punkt3 = new Punkt(punkt1);
+	  //zastosowanie konstruktora kopiuj¹cego
+          System.Console.WriteLine("punkt3:");
+          System.Console.WriteLine("x = " + punkt3.x);
+          System.Console.WriteLine("y = " + punkt3.y);
+          System.Console.WriteLine("");
+          Console.ReadKey();
+      }
+    }
+}
+
+
+****************************************
+
+Program 07 
+
+using System;
+namespace Program_Konstruktor_Czas
+{
+    public class Czas
+    {
+        // Zmienne prywatne
+        private int Rok;
+        private int Miesi¹c;
+        private int Dzieñ;
+        private int Godzina;
+        private int Minuta;
+        private int Sekunda;
+        // Metody publiczne
+        public void WyœwietlCzas()
+        {
+            Console.WriteLine("{0}.{1}.{2} {3}:{4}:{5}", Dzieñ, Miesi¹c, Rok,
+            Godzina, Minuta, Sekunda);
+        }
+    // Konstruktor
+        public Czas(System.DateTime dt)
+        {
+            Rok = dt.Year;
+            Miesi¹c = dt.Month;
+            Dzieñ = dt.Day;
+            Godzina = dt.Hour;
+            Minuta = dt.Minute;
+            Sekunda = dt.Second;
+        }
+        class Tester
+        {
+            static void Main()
+            {
+                System.DateTime aktualnyCzas = System.DateTime.Now;
+                Czas t = new Czas(aktualnyCzas);
+                t.WyœwietlCzas();
+                Console.ReadKey();
+            }
+        }
+    }
+}
+
+***********************************************************
+
+using System;
+namespace Program_Konstruktor_Przeci¹¿ony
+{
+    public class Czas
+    {
+        private int Rok;
+        private int Miesi¹c;
+        private int Dzieñ;
+        private int Godzina;
+        private int Minuta;
+        private int Sekunda = 30; // Bezpoœrednia inicjalizacja
+        public void WyœwietlCzas()
+        {
+            Console.WriteLine("{0}.{1}.{2} {3}:{4}:{5}", Dzieñ, Miesi¹c, Rok,
+            Godzina, Minuta, Sekunda);
+        }
+        public Czas(System.DateTime dt) // Konstruktor
+        {
+            Rok = dt.Year;
+            Miesi¹c = dt.Month;
+            Dzieñ = dt.Day;
+            Godzina = dt.Hour;
+            Minuta = dt.Minute;
+            Sekunda = dt.Second;
+        }
+// Konstruktor przeci¹¿ony
+        public Czas(int rok, int miesi¹c, int dzieñ, int godzina, int minuta)
+        {
+            Rok = rok;
+            Miesi¹c = miesi¹c;
+            Dzieñ = dzieñ;
+            Godzina = godzina;
+            Minuta = minuta;
+        }
+        class Tester
+        {
+            static void Main()
+            {
+                System.DateTime aktualnyCzas = System.DateTime.Now;
+                Czas t1 = new Czas(aktualnyCzas);
+                t1.WyœwietlCzas();
+                Czas t2 = new Czas(2008, 12, 31, 23, 59);
+                t2.WyœwietlCzas();
+                Console.ReadKey();
+            }
+        }
+    }
+}
+
+*******************************************
+
+
+
+using System;
+namespace Konstruktor_domyœlny
+{
+    class Data
+    {
+        public int rok, mc, dd;
+    }
+    class Test
+    {
+        static void Main()
+        {
+            Data kiedy = new Data(); 
+            // wywo³anie niejawnego
+            // konstruktora domyœlnego
+            Console.WriteLine(kiedy.rok + " " + kiedy.mc + " " + kiedy.dd );
+            Console.ReadKey();
+        }
+    }
+}
+
+************************************
+
+using System;
+namespace Program_Dzia³anie_this
+{
+    class Punkt
+    {
+        int x, y;
+        //konstruktor 1 z dwoma parametrami:
+        //ustawia punkt (x,y) o wspó³rzêdnych argumentów:
+        public Punkt(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+        //konstruktor 2 z wykorzystaniem autoreferencji do pierwszego
+        //ustawia punkt (x,x) o wspó³rzêdnych argumentu:
+        public Punkt(int x) : this(x, x) { }
+        //konstruktor bezparametrowy z wykorzystaniem autoreferencji
+        //do pierwszego - ustawia punkt o wspó³rzêdnych (0,0)
+        public Punkt() : this(0, 0) { }
+        public void Pokaz()
+        {
+            Console.WriteLine("Punkt({0},{1}).", x, y);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Punkt p1 = new Punkt(); //konstruktor bezargumentowy
+            //tworzy punkt (0,0)
+            Punkt p2 = new Punkt(10);//konstruktor z 1 argumentem
+            //tworzy punkt (10,10)
+            Punkt p3 = new Punkt(21, 31);//konstruktor z 2 argumentami
+            //tworzy punkt (21,31)
+            p1.Pokaz(); p2.Pokaz(); p3.Pokaz();
+            Console.ReadKey();
+        }
+    }
+}
+
+****************************************************************
+
+
+using System;
+namespace Program_akcesory_data
+{
+    public class Czas
+    {
+        private int Rok;
+        private int Miesi¹c;
+        private int Dzieñ;
+        private int Godzina;
+        private int Minuta;
+        private int Sekunda;
+        public void WyœwietlCzas()
+        {
+            Console.WriteLine("{0}.{1}.{2} {3}:{4}:{5}", Dzieñ, Miesi¹c, Rok, Godzina,
+            Minuta, Sekunda);
+        }
+        public Czas(System.DateTime dt)
+        {
+            Rok = dt.Year;
+            Miesi¹c = dt.Month;
+            Dzieñ = dt.Day;
+            Godzina = dt.Hour;
+            Minuta = dt.Minute;
+            Sekunda = dt.Second;
+        }
+        // W³aœciwoœci
+        public int godzina
+        {
+            get // akcesor get
+            {
+                return Godzina;
+            }
+            set // akcesor set
+            {
+                Godzina = value;
+            }
+        }
+    }
+    class Tester
+    {
+        static void Main()
+        {
+            System.DateTime aktualnyCzas = System.DateTime.Now;
+            Czas t = new Czas(aktualnyCzas);
+            t.WyœwietlCzas();
+            int aktualnaGodzina = t.godzina;
+            Console.WriteLine("Z obiektu t pobrano godzinê: {0}", aktualnaGodzina);
+            t.godzina = 15;
+            aktualnaGodzina = t.godzina;
+            Console.WriteLine("A teraz pobrano godzinê: {0}", aktualnaGodzina);
+            t.WyœwietlCzas();
+            Console.ReadKey();
+        }
+    }
+}
+
+
+*************************************************
+
+using System;
+namespace Program_W³aœciwoœci_akcesory
+{
+    public class Pracownik
+    {
+        public string nazwisko;
+        private double zarobki;
+        public double Zarobki // w³aœciwoœæ dla pola zarobki
+        {
+            get { return zarobki; }
+            set { zarobki = value; }
+        }
+        public void PokazPracownika() // metoda
+        {
+            Console.WriteLine("{0,-15} {1,10}", nazwisko, zarobki);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Pracownik p1 = new Pracownik();
+            p1.nazwisko = "Kowalski";
+            p1.Zarobki = 1250.0; // u¿ycie akcesora set
+            p1.PokazPracownika();
+            Console.WriteLine(p1.Zarobki); // u¿ycie akcesora get
+            Console.ReadKey();
+        }
+    }
+}
+
+**************************************************
+
+
+
+using System;
+namespace Program_W³aœciwoœci_akcesory
+{
+    public class Pracownik
+    {
+        public string nazwisko;
+        public double Zarobki { get; set; } // automatyczna w³aœciwoœæ
+        public void PokazPracownika() // metoda
+        {
+            Console.WriteLine("{0,-15} {1,10}", nazwisko, Zarobki);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Pracownik p1 = new Pracownik();
+            p1.nazwisko = "Kowalski";
+            p1.Zarobki = 1250.0; // u¿ycie akcesora set
+            p1.PokazPracownika();
+            Console.WriteLine(p1.Zarobki); // u¿ycie akcesora get
+            Console.ReadKey();
+        }
+    }
+}
+
+***************************************************
+
+using System;
+namespace Wlasciwosci_Set_Zmiany
+{
+    class Data
+    {
+        int mies, dzien;
+        public int Mies
+        {
+            get { return mies; }
+            set
+            {
+                if (value < 13 && 0 < value) mies = value;
+                else mies = 1;  //wprowadzenie zmian w akcesorze
+            }
+        }
+        public int Dzien
+        {
+            get { return dzien; }
+            set { dzien = value; }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Data d = new Data();
+            d.Mies = 33;
+            Console.WriteLine(d.Mies);
+            d.Dzien = 23;
+            Console.WriteLine(d.Dzien);
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+
+***************************************************
+
+using System;
+namespace Program_Sk³adowe_statyczne
+{
+    class Program
+    {
+        class Matematyka
+        {
+            public static double Pi = 3.14159;
+            public static void poleKola(int r)
+            {
+                Console.WriteLine("Pole kola to: {0}", Matematyka.Pi * r * r);
+            }
+            public static void obwodKola(int r)
+            {
+                Console.WriteLine("Obwód kola to: {0}", Matematyka.Pi * r * 2);
+            }
+        }
+        static void Main()
+        {
+            int promien_kola = 6;
+            Matematyka.poleKola(promien_kola);
+            Matematyka.obwodKola(promien_kola);
+            Console.ReadKey();
+        }
+    }   
+}
+
+**********************************************************
+
+using System;
+namespace Program_Modyfikator_Static
+{
+    class Konwersje
+    {
+        private static double cmNaCal = 2.54;
+        private static double gramNaFunt = 455;
+        public static double caleNaMetry(double cale)
+        {
+            return (cale * cmNaCal);
+        }
+        public static double funtyNaGramy(double funty)
+        {
+            return (funty * gramNaFunt);
+        }
+    }
+    class Test
+    {
+        static void Main()
+        {
+            double cal, funt;
+            string bufor;
+            Console.Write("Podaj odleg³oœæ w calach: ");
+            bufor = Console.ReadLine();
+            cal = double.Parse(bufor);
+            Console.WriteLine("Odleg³oœæ {0} cali to {1} cm", cal,
+            Konwersje.caleNaMetry(cal));
+            Console.Write("Podaj wagê w funtach: ");
+            bufor = Console.ReadLine();
+            funt = double.Parse(bufor);
+            Console.WriteLine("Ciê¿ar {0} funtów to {1} kilogramów", funt,
+            Konwersje.funtyNaGramy(funt) / 1000);
+            Console.ReadKey();
+        }
+    }
+}
+
+************************************************************
+
+
+
+using System;
+namespace Program_pole_statyczne
+{
+    public class Kotek
+    {
+        private static int ileKotków = 0; // pole statyczne
+        public Kotek() // konstruktor
+        {
+            ileKotków++;
+        }
+        public static void IleJestKotków()
+        {
+            Console.WriteLine("Przysz³y na œwiat {0} kotki", ileKotków);
+        }
+        class Program
+        {
+            static void Main()
+            {
+                Kotek.IleJestKotków();
+                Kotek mruczuœ = new Kotek();
+                Kotek.IleJestKotków();
+                Kotek czaruœ = new Kotek();
+                Kotek.IleJestKotków();
+                Console.ReadKey();
+            }
+        }
+    }
+}
+**********************************************************
+
+using System;
+using System.Threading;
+namespace Program_Dzia³anie_destruktora
+{
+    class Punkt
+    {
+        int x, y;
+        public Punkt(int x1, int y1)
+        {
+            x = x1;
+            y = y1;
+            //sygnalizacja wywo³ania konstruktora
+            //(na potrzeby przyk³adu):
+            Console.Beep(150, 100);
+        }
+        public Punkt(int z)
+        {
+            x = z;
+            y = z;
+            Console.Beep(250, 200);
+        }
+        //konstruktor bezparametrowy
+        //ustawia punkt o wspó³rzêdnych (0,0)
+        public Punkt()
+        {
+            x = 0;
+            y = 0;
+            Console.Beep(50, 300);
+        }
+        //destruktor:
+        ~Punkt()
+        {
+            Console.WriteLine("Destruktor – usuwam Punkt({0},{1}).", x, y);
+            Console.Beep(100, 500); //sygnalizacja wywo³ania destruktora
+            Thread.Sleep(1000);
+        }
+        public void Pokaz()
+        {
+            Console.WriteLine("Punkt({0},{1}).", x, y);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Punkt p1 = new Punkt(); //konstruktor bezargumentowy
+            //tworzy punkt (0,0)
+            Punkt p2 = new Punkt(10);//konstruktor z 1 argumentem
+            //tworzy punkt (10,10)
+            Punkt p3 = new Punkt(21, 31);//konstruktor z 2 argumentami
+            //tworzy punkt (21,31)
+            p1.Pokaz(); p2.Pokaz(); p3.Pokaz();
+            Console.ReadKey();
+        }
+    }
+}
+
+*******************************************************************
+
+using System;
+namespace Program_Przeci¹¿enie_Metod
+{
+    class Program
+    {
+        class Test
+        {
+            // metoda suma z jednym parametrem int:
+            public int suma(int a)
+            {
+                return a + a;
+            }
+            // metoda suma z dwoma parametrami int:
+            public int suma(int a, int b)
+            {
+                return a + b;
+            }
+            // metoda suma z dwoma parametrami double:
+            public double suma(double a, double b)
+            {
+                return a + b;
+            }
+        }
+        static void Main(string[] args)
+        {
+            Test t1 = new Test();
+            //odwo³anie siê do przeci¹¿onej metody suma:
+            Console.WriteLine("Metoda z 1 par. int = " + t1.suma(5));            
+            Console.WriteLine("Metoda z 2 par. int = " + t1.suma(3, 4));
+            Console.WriteLine("Metoda z 2 par. double = " + t1.suma(1.5, 6.55));
+            Console.ReadKey();
+        }
+    }
+}
+
+*******************************************
+

@@ -1,0 +1,15 @@
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/bin/Debug/net9.0/System Obsługi Zleceń
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/bin/Debug/net9.0/System Obsługi Zleceń.deps.json
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/bin/Debug/net9.0/System Obsługi Zleceń.runtimeconfig.json
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/bin/Debug/net9.0/System Obsługi Zleceń.dll
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/bin/Debug/net9.0/System Obsługi Zleceń.pdb
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/obj/Debug/net9.0/System Obsługi Zleceń.GeneratedMSBuildEditorConfig.editorconfig
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/obj/Debug/net9.0/System Obsługi Zleceń.AssemblyInfoInputs.cache
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/obj/Debug/net9.0/System Obsługi Zleceń.AssemblyInfo.cs
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/obj/Debug/net9.0/System Obsługi Zleceń.csproj.CoreCompileInputs.cache
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/obj/Debug/net9.0/System Obsługi Zleceń.sourcelink.json
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/obj/Debug/net9.0/System Obsługi Zleceń.dll
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/obj/Debug/net9.0/refint/System Obsługi Zleceń.dll
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/obj/Debug/net9.0/System Obsługi Zleceń.pdb
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/obj/Debug/net9.0/System Obsługi Zleceń.genruntimeconfig.cache
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Projekt_Zaliczeniowy/System Obsługi Zleceń/obj/Debug/net9.0/ref/System Obsługi Zleceń.dll
