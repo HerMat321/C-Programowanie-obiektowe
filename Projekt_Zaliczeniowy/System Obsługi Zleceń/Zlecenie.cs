@@ -11,6 +11,7 @@ class Zlecenie
    public int Id
     {
         get { return id; }
+        set { id = value; }
     }
 
 
@@ -18,6 +19,7 @@ class Zlecenie
    public DateOnly DataUtworzenia
     {
         get { return dataUtworzenia ; }
+        set { dataUtworzenia = value; }
     }
    private string klient;
    public string Klient
@@ -25,6 +27,11 @@ class Zlecenie
         get { return klient ; }
     }
    private string opis;
+   public string Opis
+    {
+        get { return opis ; }
+        set { opis = value ;}
+    }
 
    private string status;
     public string Status
@@ -67,6 +74,28 @@ class Zlecenie
         this.status = "Nowe";
         this.serwisant = "Nie przypisano";
         this.kosztZlecenia = 0;
+    }
+
+    public Zlecenie(int id, string klient, string opis)
+    {
+        this.id = id;
+        this.klient = klient;
+        this.dataUtworzenia = DateOnly.FromDateTime(DateTime.Now);
+        this.status = "Nowe";
+        this.serwisant = "Nie przypisano";
+        this.kosztZlecenia = 0;
+        this.opis = opis;
+    }
+
+     public Zlecenie(string klient, string opis, DateOnly data)
+    {
+        this.id = id;
+        this.klient = klient;
+        this.dataUtworzenia = DateOnly.FromDateTime(DateTime.Now);
+        this.status = "Nowe";
+        this.serwisant = "Nie przypisano";
+        this.kosztZlecenia = 0;
+        this.opis = opis;
     }
 
     //Metoda obliczająca koszt zlecenia
