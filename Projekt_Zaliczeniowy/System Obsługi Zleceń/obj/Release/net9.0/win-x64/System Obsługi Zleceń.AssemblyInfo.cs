@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("System Obsługi Zleceń")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed89548029ea6ba7463c225be505766965ac5e73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72ae204049ea6b28da47b18cb8cbef3c94b1c0de")]
 [assembly: System.Reflection.AssemblyProductAttribute("System Obsługi Zleceń")]
 [assembly: System.Reflection.AssemblyTitleAttribute("System Obsługi Zleceń")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

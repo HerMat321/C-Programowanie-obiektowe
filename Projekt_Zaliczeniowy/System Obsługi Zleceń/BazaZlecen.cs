@@ -64,7 +64,7 @@ class BazaZlecen : IBazaZlecen
                     string klient = odczyt["klient"].ToString();
                     string opis = odczyt["opis"].ToString();
 
-                    DateOnly data = DateOnly.FromDateTime(Convert.ToDateTime(odczyt["data_utworzenia"]));
+                    DateTime data = Convert.ToDateTime(odczyt["data_utworzenia"]);
 
                     string status = odczyt["status"].ToString();
                     string serwisant = odczyt["serwisant"].ToString();
@@ -254,8 +254,15 @@ class BazaZlecen : IBazaZlecen
 
     public void KosztZlecenia(int id, double godziny, double kilometry)
     {
-        //Dzialanie arytmetyczne obliczajace koszt zlecenia
-        double koszt = (godziny * 120) + (kilometry * 2.5);
+        //Tworzymy obiekt do obliczenia kosztu
+        Zlecenie zlecenie = new Zlecenie("","",DateTime.Now);
+
+        //Ustawienie danych
+        zlecenie.IloscGodzin = godziny;
+        zlecenie.IloscKilometrow = kilometry;
+
+        //Obliczamy koszt przez metode
+        double koszt = zlecenie.ObliczKoszt();
 
         //Otwarcie polaczenia z baza danych
         using (MySqlConnection polaczenie = PolaczenieBazaDanych.GetConnection())
@@ -339,6 +346,9 @@ class BazaZlecen : IBazaZlecen
                     break;
 
             }
+
+            //Pobranie listy zlecen z Bazy danych
+            List<Zlecenie> listaZlecen = PobierzZlecenia();
 
             foreach (Zlecenie zlecenie in listaZlecen)
             {

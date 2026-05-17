@@ -15,8 +15,8 @@ class Zlecenie
     }
 
 
-   private DateOnly dataUtworzenia;
-   public DateOnly DataUtworzenia
+   private DateTime dataUtworzenia;
+   public DateTime DataUtworzenia
     {
         get { return dataUtworzenia ; }
         set { dataUtworzenia = value; }
@@ -25,6 +25,7 @@ class Zlecenie
    public string Klient
     {
         get { return klient ; }
+        set { klient = value ;}
     }
    private string opis;
    public string Opis
@@ -70,7 +71,7 @@ class Zlecenie
     {
         this.id = id;
         this.klient = klient;
-        this.dataUtworzenia = DateOnly.FromDateTime(DateTime.Now);
+        this.dataUtworzenia = DateTime.Now;
         this.status = "Nowe";
         this.serwisant = "Nie przypisano";
         this.kosztZlecenia = 0;
@@ -80,18 +81,18 @@ class Zlecenie
     {
         this.id = id;
         this.klient = klient;
-        this.dataUtworzenia = DateOnly.FromDateTime(DateTime.Now);
+        this.dataUtworzenia = DateTime.Now;
         this.status = "Nowe";
         this.serwisant = "Nie przypisano";
         this.kosztZlecenia = 0;
         this.opis = opis;
     }
 
-     public Zlecenie(string klient, string opis, DateOnly data)
+     public Zlecenie(string klient, string opis, DateTime data)
     {
         this.id = id;
         this.klient = klient;
-        this.dataUtworzenia = DateOnly.FromDateTime(DateTime.Now);
+        this.dataUtworzenia = data;
         this.status = "Nowe";
         this.serwisant = "Nie przypisano";
         this.kosztZlecenia = 0;

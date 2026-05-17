@@ -167,7 +167,7 @@ class Program
                     Console.Write("DATA UTWORZENIA: ");
                     Console.ResetColor();
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.Write($"{zlecenie.DataUtworzenia}\n");
+                    Console.Write($"{zlecenie.DataUtworzenia.ToString("yyyy-MM-dd")}\n");
 
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write("STATUS: ");
