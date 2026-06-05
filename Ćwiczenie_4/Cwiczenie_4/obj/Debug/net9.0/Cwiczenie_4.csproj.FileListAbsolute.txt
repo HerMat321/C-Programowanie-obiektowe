@@ -1,0 +1,15 @@
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/bin/Debug/net9.0/Cwiczenie_4
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/bin/Debug/net9.0/Cwiczenie_4.deps.json
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/bin/Debug/net9.0/Cwiczenie_4.runtimeconfig.json
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/bin/Debug/net9.0/Cwiczenie_4.dll
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/bin/Debug/net9.0/Cwiczenie_4.pdb
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/obj/Debug/net9.0/Cwiczenie_4.GeneratedMSBuildEditorConfig.editorconfig
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/obj/Debug/net9.0/Cwiczenie_4.AssemblyInfoInputs.cache
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/obj/Debug/net9.0/Cwiczenie_4.AssemblyInfo.cs
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/obj/Debug/net9.0/Cwiczenie_4.csproj.CoreCompileInputs.cache
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/obj/Debug/net9.0/Cwiczenie_4.sourcelink.json
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/obj/Debug/net9.0/Cwiczenie_4.dll
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/obj/Debug/net9.0/refint/Cwiczenie_4.dll
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/obj/Debug/net9.0/Cwiczenie_4.pdb
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/obj/Debug/net9.0/Cwiczenie_4.genruntimeconfig.cache
+/home/mateusz/Programowanie/C#/Programowanie_Obiektowe_Cwiczenia/Ćwiczenie_4/Cwiczenie_4/obj/Debug/net9.0/ref/Cwiczenie_4.dll
